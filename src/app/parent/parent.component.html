@@ -1,0 +1,9 @@
+<p>Parent works!</p>
+<app-child [data]="teacher" [data1]="age" (Messageevent)="receiveMsg($event)" teachers="t" (newteacher)="AddTeacher($event)" ></app-child>
+<p *ngIf="message">Received Message: {{ message }}</p>
+<div *ngFor="let t of teachers">
+  <div>{{t}}</div>
+</div>
+
+
+

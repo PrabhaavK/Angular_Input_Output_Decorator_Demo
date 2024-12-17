@@ -1,0 +1,6 @@
+<p>Child works!</p>
+<p>Teacher: {{ data }}</p>
+<p>Age: {{ data1 }}</p>
+<button type ="button"(click)="sendMessage()">Send message </button>
+<input type ="text" name = "addnewTeacher" #newteacher>
+<button type="button" (click)="addnewTeacher(newteacher.value)">ok </button>
